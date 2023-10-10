@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     var myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'), {
-        interval: 2000, 
+        interval: 5000, 
         wrap: true
     });
 

@@ -17,17 +17,17 @@
   }
 
 body{
-    background: #367036 ;
+    background: #1f5142 ;
 }
 .form-area{
     padding-top: 3%;
 }
 .row.single-form{
     box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
-    background: #367036;  
+    background: #1f5142;  
 }
 .left{ 
-    background: #367036;
+    background: #1f5142;
     padding: 200px 98px;
 }
 .left h2{
@@ -45,20 +45,11 @@ body{
     position: relative;
     background: antiquewhite ;
 }
-/*.right i{
-    position: absolute;
-    font-size: 80px;
-    left: -27px;
-    top: 40%;
-    color: #c08b2f;
-}*/
-/*.form-control{
-    border: 2px solid #000;
-}*/
+
 .right button{
     border: none;
     border-radius: 0;
-    background: #367036;
+    background: #1f5142;
     width: 180px;
     color: #fff;
     padding: 15px 0;

@@ -7,7 +7,6 @@ body {
     display: flex;
     justify-content: center;
     width: 80%;
-    /*margin: 70px auto 0 auto;*/
 }
 #gallery {
     width: 95%;
@@ -24,8 +23,6 @@ body {
     background: white;
 }
 .card-img {
-    /*border-top-left-radius: 10px;
-    border-top-right-radius: 10px;*/
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: flex-start;
@@ -61,16 +58,7 @@ body {
     font-size: 20px;
 }
 
-/*.button a {
-    background-color: #3498db;
-    text-decoration: none;
-    width: 100px;
-    text-align: center;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 10px;
-    font-size: 20px;
-}*/
+
 .list {
     list-style-type: none;
     border;

@@ -1,11 +1,11 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     var myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'), {
-        interval: 2000, // Réglez l'intervalle de diaporama ici (en millisecondes)
+        interval: 2000, 
         wrap: true
     });
 
-    // Gère la navigation lorsque vous cliquez sur les éléments de pagination
+    
     var carouselIndicators = document.querySelectorAll('.carousel-indicators li');
     carouselIndicators.forEach(function (indicator, index) {
         indicator.addEventListener('click', function () {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Met à jour la classe active sur les éléments de pagination lorsque le carousel change de diapositive
+    
     myCarousel._element.addEventListener('slide.bs.carousel', function (event) {
         carouselIndicators.forEach(function (indicator) {
             indicator.classList.remove('active');

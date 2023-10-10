@@ -1,0 +1,129 @@
+.navbar {
+    background-color: #1f5142; 
+  }
+  .navbar .navbar-brand {
+   color: #fff;
+   font-size: large;
+   font-weight: bold;
+  }
+  .navbar .nav-link {
+   color: #fff;
+   font-size: large;
+  }
+
+  .navbar .nav-link.active {
+    color: #fff;
+    font-size: large;
+  }
+
+body{
+    background: #367036 ;
+}
+.form-area{
+    padding-top: 3%;
+}
+.row.single-form{
+    box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+    background: #367036;  
+}
+.left{ 
+    background: #367036;
+    padding: 200px 98px;
+}
+.left h2{
+    /*font-family: poppins;*/
+    color: antiquewhite;
+    font-weight: 700;
+    font-size: 48px;
+
+}
+.left h2 span{
+    font-weight: 100;
+}
+.right {
+    padding: 70px 100px;
+    position: relative;
+    background: antiquewhite ;
+}
+/*.right i{
+    position: absolute;
+    font-size: 80px;
+    left: -27px;
+    top: 40%;
+    color: #c08b2f;
+}*/
+/*.form-control{
+    border: 2px solid #000;
+}*/
+.right button{
+    border: none;
+    border-radius: 0;
+    background: #367036;
+    width: 180px;
+    color: #fff;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.right button:hover{
+    background: #252525;
+}
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .cookie-banner button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  
+@media (min-width: 576px){
+    .right i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .right i{
+        top: -52px;
+        transform: rotate(90deg);
+        left: 50%
+    }
+}
+
+@media (max-width: 767px){
+    .left{
+        padding:90px 15px;
+        text-align: center;
+    }
+    .left h2{
+        font-size: 25px;
+    }
+    .right{
+        padding: 25px;
+    }
+    .right i{
+        top: -25px;
+        transform: rotate(90deg);
+        left: 45%;
+    }
+    .right button{
+        width: 150px;
+        padding: 12px 0;
+    }
+}

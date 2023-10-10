@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8ed460a316.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="picture.css">
+
+  <style>
+    .navbar {
+      background-color: #1f5142; 
+    }
+    .navbar .navbar-brand {
+     color: #fff;
+     font-size: large;
+     font-weight: bold;
+    }
+    .navbar .nav-link {
+     color: #fff;
+     font-size: large;
+    }
+
+    .navbar .nav-link.active {
+      color: #fff;
+      font-size: large;
+    }
+
+    .carousel-inner {
+      height: 32rem;
+      margin: auto;
+      padding: none;
+    }
+    
+    #myCaroussel {
+      display: flex;
+      width: 90%;
+      margin: auto;
+    }
+    .carousel-item img {
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+      width: 100%;
+      height: 32rem;
+      box-shadow: 4px 4px 6px;
+      
+    }
+    .title {
+      padding: 5px;
+      text-align: center;
+
+    }
+    .navigation {
+      padding: 15px;
+      font-size: large;
+      font-weight: bold;
+    }
+    .pagination .page-link {
+      color: #1f5142;
+    }
+    .navigation .active {
+      background-color: #fff;
+    }
+    .cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.cookie-banner button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">YUMMY<i class="fa-solid fa-bowl-food" style="color: #ffffff; margin: 10px;"> </i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="menu3.html">Menu</a>
+              <a class="nav-link active" href="pictures.html">Galerie</a>
+              <a class="nav-link" href="restaurant.html">Restaurant</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <h1 class="title" style="color: #1f5142;"><strong>Notre Galerie</strong></h1>
+  <!--nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">YUMMY<i class="fa-solid fa-bowl-food" style="color:#000000; margin: 10px;"> </i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="menu.html">Menu</a>
+          <a class="nav-link" href="pictures.html">Galerie</a>
+          <a class="nav-link" href="restaurant.html">Restaurant</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav-->
+ 
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="image/advocator-sy-K5r_kpfhLIM-unsplash.jpg" class="d-block w-100 img-fluid" alt="Nouille sauté">
+        </div>
+        <div class="carousel-item">
+            <img src="image/scott-eckersley-6a5ZpG9SQHs-unsplash.jpg" class="d-block w-100 img-fluid" alt="Donbori">
+        </div>
+        <div class="carousel-item">
+            <img src="image/mahmoud-fawzy-Dbx6-XZY6Dg-unsplash.jpg" class="d-block w-100 img-fluid" alt="Sushi classic">
+        </div>
+        <div class="carousel-item">
+            <img src="image/mahmoud-fawzy-c4zyDtK9h_g-unsplash.jpg" class="d-block w-100 img-fluid" alt="California rolls">
+        </div>
+    </div>
+</div>
+    <!--a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div-->
+
+<nav class="navigation" aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="pictures.html">Entrée</a></li>
+        <li class="page-item"><a class="page-link active" href="picture2.html">Plat principal</a></li>
+        <li class="page-item"><a class="page-link" href="picture3.html">Dessert</a></li>
+    </ul>
+</nav>
+<div class="cookie-banner" id="cookieBanner">
+    <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. En cliquant sur "Accepter", vous consentez à l'utilisation de tous les cookies.</p>
+    <button onclick="acceptCookies()">Accepter</button>
+  </div>
+  <script src="pictures.js"></script>
+
+</body>
+<footer>
+  <div class="container my-5">
+      <!-- Footer -->
+      <footer class="text-center" style="background-color: white">
+        <!-- Grid container -->
+        <div class="container">
+          <!-- Section: Links -->
+          <section class="mt-5">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5">
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-dark" style="text-decoration:none;">Home</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-dark" style="text-decoration:none;">notre menu</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-dark" style="text-decoration:none;">Notre galerie</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-dark" style="text-decoration:none;">Information</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+    
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!" class="text-dark" style="text-decoration:none;">Contact</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
+    
+          <hr class="my-5" />
+    
+          
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div
+             class="text-center p-3"
+             style="background-color: white"
+             >
+          © 2023 Copyright, Inc
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+
+</footer>
+<!-- Footer -->
+</footer>
+
+</html>

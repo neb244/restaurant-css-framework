@@ -2,59 +2,246 @@
 <html lang="en">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/8ed460a316.js" crossorigin="anonymous"></script>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Acceuil</title>
+    <style>
+        .navbar {
+    background-color: #1f5142; 
+  }
+  .navbar .navbar-brand {
+   color: #fff;
+   font-size: large;
+   font-weight: bold;
+  }
+  .navbar .nav-link {
+   color: #fff;
+   font-size: large;
+  }
+
+  .navbar .nav-link.active {
+    color: #fff;
+    font-size: large;
+  }
+  .cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.cookie-banner button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.text-area h1 {
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.text-area {
+    justify-content: space-between;
+
+}
+.pannel {
+    flex-flow: row wrap;
+}
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        width: auto;
+        flex: none;
+    }
+    .container {
+        flex-direction: column; /* Change la direction en colonne pour les écrans mobiles */
+    }
+    .panel {
+        flex: none; 
+        width: 90%; /* Les panneaux occupent toute la largeur de l'écran mobile */
+        /* Autres styles pour les écrans mobiles */
+    }
+}
+
+
+
+
+
+    </style>
 </head>
 <body>
-    <div class="container-xxl py-5 bg-success hero-header mb-5">
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">YUMMY<i class="fa-solid fa-bowl-food" style="color: #ffffff; margin: 10px;"> </i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="menu3.html">Menu</a>
+              <a class="nav-link" href="pictures.html">Galerie</a>
+              <a class="nav-link" href="restaurant.html">Restaurant</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+<div class="container-xxl py-5 bg-success hero-header mb-5" style="background-image: url('image/pourya-gohari-sP5w6saa_FQ-unsplash .jpg'); background-size: 100% ;">
+<div class="container my-5 py-5">
     <div class="jumbotron jumbotron-fluid text-center">
         <div class="container my-5 py-5">
             <div class="row align-items-center g-5">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6 text-center text-sm-start text-md-start text-lg-start">
-                <h1 class="display-3 animate__animated animate__slideInLeft">Asian<br>Restaurant</h1>
-                <p class="lead">Appreciez nos delicieux repas préparés avec soin.Alios autem dicere aiunt multo etiam inhumanius (quem locum breviter paulo ante perstrinxi) praesidii adiumentique causa, non benevolentiae neque caritatis, amicitias esse expetendas; itaque, ut quisque minimum firmitatis haberet minimumque virium, ita amicitias appetere maxime; ex eo fieri ut mulierculae magis amicitiarum praesidia quaerant quam viri et inopes quam opulenti et calamitosi quam ii qui putentur beati.
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 text-center text-sm-start text-md-start text-lg-start font-weight-bold">
+                <h1 class="display-3 animate__animated animate__slideInLeft text-white "><strong>Asian<br>Restaurant</strong></h1>
+                <p class="lead text-white"><strong>Appreciez nos delicieux repas préparés avec soin.Bienvenue chez Yummy, l'ultime destination pour une expérience gastronomique asiatique inoubliable. Plongez dans un voyage culinaire qui vous transportera à travers les saveurs exquises de l'Asie, où chaque bouchée est une découverte sensorielle.</strong></p>
+                <a class="btn btn-success btn-lg animate__animated animate__slideInLeft animate__delay-1s" href="menu.html" role="button">Découvrez notre menu </a>
 
-                </p>
                 
                 </div>
             </div>
         </div>
         </div>
       </div>
-
-      <div class="col-12">
+    </div>
+    <div class="text-area">
+        <h1 class="my-5"> Prochainement chez YUMMY !</h1>
+    </div>
+   <div class="container col-10 col-lg-10 col-sm-10">
+      <!--div class="col-12-->
         <div class="row">
             <!-- Pannel promo -->
-            <div class="col-12 col-sm-5 col-md-5 col-lg-5">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1607857531051-154c0e9cb36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="card-img-top" alt="Promo Image">
+            <div class="col-10 col-sm-4 col-md-4 col-lg-4">
+                <div class="card h-70">
+                    <img src="image/anna-bratiychuk-675m-WS8vHQ-unsplash.jpg" class="card-img-top" alt="Promo Image">
                     <div class="card-body">
-                        <h5 class="card-title">Une réduction sur nos sushis..</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
-                        <a href="#" class="btn btn-link">Lire la suite</a>
+                        <h5 class="card-title">Ce jeudi une réduction sur nos sushis !</h5>
+                        <p class="card-text">Comme tous les premiers jeudi du mois nous aimons honorer nos fidèles clients, ne ratez pas l'occasion c'est cette semaine</p>
+                        <a href="#" class="btn btn-success">Jeudi 05/10</a>
                     </div>
                 </div>
             </div>
-            <!-- pannel vide-->
-            <div class="col-0 col-sm-2 col-md-2 col-lg-2">
-            </div>
+            
             <!-- pannel event-->
-            <div class="col-12 col-sm-5 col-md-5 col-lg-5">
-                <div class="card">
+            <div class="col-10 col-sm-4 col-md-4 col-lg-4">
+                <div class="card h-70">
                     <img src="https://images.unsplash.com/flagged/photo-1556742524-750f2ab99913?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" class="card-img-top" alt="Event Image">
                     <div class="card-body">
                         <h5 class="card-title">Ce samedi, la célébration de notre nouveaux restaurant.</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
-                        <a href="#" class="btn btn-link">Lire la suite</a>
+                        <p class="card-text">Nous vous attendons ce samedi pour feter l'ouverture de notre prochain restaurant, pleins de jolies surprises vous y attendent.</p>
+                        <a href="#" class="btn btn-success">Samedi 07/10</a>
                     </div>
                 </div>
             </div>
+            <div class="col-10 col-sm-4 col-md-4 col-lg-4">
+                <div class="card h-70">
+                    <img src="image/thomas-marban-EHK-EH1SRzQ-recadré-unsplash.jpg" class="card-img-top" alt="Event Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Bientot une nouveauté chez YUMMY !</h5>
+                        <p class="card-text">Explorez l'art des sushis avec nos ateliers. Apprenez à sélectionner les meilleurs ingrédients, à rouler et à découper. Dégustez ensuite vos créations dans une ambiance asiatique immersive.</p>
+                        <a href="#" class="btn btn-success">Réservez bientot !</a>
+                    </div>
+                </div>
+            </div>
+   </div>
+   </div>
 
 
 
+
+
+
+            <div class="cookie-banner" id="cookieBanner">
+                <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. En cliquant sur "Accepter", vous consentez à l'utilisation de tous les cookies.</p>
+                <button onclick="acceptCookies()">Accepter</button>
+            </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
+<footer>
+    <div class="container my-5">
+        <!-- Footer -->
+        <footer class="text-center" style="background-color: white">
+          <!-- Grid container -->
+          <div class="container">
+            <!-- Section: Links -->
+            <section class="mt-5">
+              <!-- Grid row-->
+              <div class="row text-center d-flex justify-content-center pt-5">
+                <!-- Grid column -->
+                <div class="col-md-2">
+                  <h6 class="text-uppercase font-weight-bold">
+                    <a href="index.html" class="text-dark" style="text-decoration:none;">Home</a>
+                  </h6>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-2">
+                  <h6 class="text-uppercase font-weight-bold">
+                    <a href="menu3.html" class="text-dark" style="text-decoration:none;">notre menu</a>
+                  </h6>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-2">
+                  <h6 class="text-uppercase font-weight-bold">
+                    <a href="pictures.html" class="text-dark" style="text-decoration:none;">Notre galerie</a>
+                  </h6>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-2">
+                  <h6 class="text-uppercase font-weight-bold">
+                    <a href="restaurant.html" class="text-dark" style="text-decoration:none;">Information</a>
+                  </h6>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-2">
+                  <h6 class="text-uppercase font-weight-bold">
+                    <a href="contact.html" class="text-dark" style="text-decoration:none;">Contact</a>
+                  </h6>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row-->
+            </section>
+            <!-- Section: Links -->
+      
+            <hr class="my-5" />
+      
+            
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div
+               class="text-center p-3"
+               style="background-color: white"
+               >
+            © 2023 Copyright, Inc
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </div>
+      <!-- End of .container -->
+  
+  </footer>
+  <!-- Footer -->
+</footer>
 </html>

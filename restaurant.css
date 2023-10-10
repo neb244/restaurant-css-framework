@@ -81,11 +81,11 @@ body{
   }
 @media screen and (max-width: 767px) {
     .section-title h2 {
-      font-size: 30px; /* Ajustez la taille de la police pour les petits écrans */
+      font-size: 30px; 
     }
 
     .contact-form, .map-area {
-      width: 100%; /* Ajustez la largeur pour remplir l'écran mobile */
+      width: 100%;
     }
 @media (min-width: 768px) and (max-width: 991px){
     .right i{

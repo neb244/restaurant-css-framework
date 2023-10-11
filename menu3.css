@@ -23,3 +23,13 @@
     color: #fff;
     font-size: large;
   }
+
+.col-sm-12.col-md-8 {
+  font-size: 20px;
+  justify-content: space-between;
+  align-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+
+}
